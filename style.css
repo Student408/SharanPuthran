@@ -44,11 +44,12 @@ header {
     border-radius: 50%;
     border: 2px solid #ffffff;
     width: 150px;
-    height: 150px;
+    height: auto;
 }
 
 .banner-text {
     position: absolute;
+    text-align: justify;
     top: 10%; /* Adjust the vertical position as needed */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Center horizontally */
@@ -56,7 +57,6 @@ header {
     font-size: 16px;
     font-weight:100;
     font-family: monospace; /* Apply custom font here */
-    font-size: 8vw;
 }
 
 #rotating-text::after {
@@ -102,7 +102,7 @@ nav ul {
     text-align: center;
     list-style: none;
     padding: 0;
-    margin-top: 0px;
+    margin-top: 20px;
 }
 
 nav ul li {
@@ -156,9 +156,7 @@ h2 {
     max-width: 800px;
     text-align: justify;
     margin: 20px auto;
-    /* line-height: 1.5;
-    letter-spacing: 1.5px; */
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .download-cv {
@@ -222,7 +220,7 @@ h2 {
 }
 .footer h2 {
     margin-bottom: 40px;
-    font-size: 10;
+    font-size: 24px;
     font-family: monospace;
     
 }
@@ -243,3 +241,53 @@ h2 {
     color: #ffffff;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
+
+
+
+/* Styles for screens smaller than 768px (typical mobile devices) */
+@media only screen and (max-width: 767px) {
+    /* Your CSS rules specific to mobile devices go here */
+    .header-banner {
+        height: 150px;
+    }
+    .banner-text {
+        position: absolute;
+        text-align: justify;
+        top: -20px; /* Adjust the vertical position as needed */
+        left: 50%; /* Center horizontally */
+    }
+    .profile-container {
+        position: absolute;
+        top: 0vw;
+        transform: translateY(50%);
+    }
+    .profile-pic {
+        border-radius: 50%;
+        border: 2px solid #ffffff;
+        width: 150px;
+        height: auto;
+    }
+    header h1 {
+        font-family: 'Amsterdam', sans-serif; /* Use the imported font for <h1> */
+        font-size: 12vw; /* Set font size relative to viewport width */
+        font-weight: 100;
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 5px;
+    }
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        margin-bottom: 20px;
+        margin-top: 50px;
+    }
+
+    .footer h2 {
+        margin-bottom: 40px;
+        font-size: 20px;
+        font-family: monospace;
+        
+    }
+
+  }
+  
