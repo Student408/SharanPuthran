@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function type() {
         rotatingText.textContent = currentText;
-        rotatingText.style.fontSize = '4vh'; // Change font size here
+        rotatingText.style.fontSize = '16px'; // Change font size here
 
         if (!isDeleting && charIndex < texts[index].length) {
             currentText += texts[index].charAt(charIndex);
